@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper,oneside]{report}
+\usepackage{bpchem}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{natbib}
+
+\setmainfont{Arial}
+\titleformat{\chapter}{\bfseries}{\thechapter.}{0em}{}
+
+\begin{document}
+\renewcommand\contentsname{Inhaltsverzeichnis}
+\tableofcontents
+
+
+\chapter{Einleitung und Vorbetrachtung}
+
+Glas also \BPChem{SiO\_2} ist einer der Wenigen Feststoffe die für sichtbares Licht durchlässig sind. Diese Facharbeit möchte rechnerisch aufzeigen, warum Glas das sichtbare Licht durchlässt.
+\\Stoffe sind undurchlässig für Licht und andere Elektromagnetische Wellen, wenn sie Elektronen haben, die mit diesen reagieren könnten.
+\\Zur Betrachtung dieses Umstandes müssen drei Effekte betrachtet werden. \cite{pape99}
+
+\chapter{Beschreibung der physikalisch-chemischen Modelle}
+
+\section{Bohrsches Atommodell}
+
+\section{Photon-Elektron-Reaktion}
+
+\chapter{Mathematischer Beweis}
+
+\chapter{Schlussbetrachtung}
+
+
+
+\appendix{Anhang}
+\chapter{Quellen}
+\section{Onlinequellen}
+\bibliographystyle{plain}
+\bibliography{"Sources.bib"}
+
+%Michael Ralph Pape [http://fam-pape.de/raw/ralph/studium/teilchenphysik/] (13.10.2015)
+
+
+\end{document}
