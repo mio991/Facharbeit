@@ -1,19 +1,24 @@
 \documentclass[11pt,a4paper,oneside]{report}
+\usepackage[ngerman]{babel}
 \usepackage{bpchem}
 \usepackage{fontspec}
-\usepackage{titlesec}
+\usepackage[compact]{titlesec}
 \usepackage{natbib}
 \usepackage{url}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
 \setmainfont{Arial}
-\titleformat{\chapter}{\bfseries}{\thechapter.}{0em}{}
+\titleformat{\chapter}[hang]{\LARGE\bfseries}{\thechapter}{1em}{}
 
 \begin{document}
-\renewcommand\contentsname{Inhaltsverzeichnis}
-\tableofcontents
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+%\renewcommand{\bibname}{\chapter{Quellen}}
+\renewcommand{\bibname}{Quellen}
 
+% Content
+
+\tableofcontents
 
 \chapter{Einleitung und Vorbetrachtung}
 
@@ -26,20 +31,28 @@ Glas also \BPChem{SiO\_2} ist einer der wenigen Feststoffe die für sichtbares L
 \section{Modelle der Quantenmechanik}
 In der Quantenmechanik wird angennommen, das alle Elementarteilchen sowohl Teilchen- als auch Wellencharakter haben. Auserdem haben auch die bis dahin nur als Feld beschriebenen Effekte Teilchencharakter zum Beispiel das elektromagnetische Feld das durch Photonen übertragen wird.
 Für diese Arbeit ist alerdings nur ein Teil der Quanten relevant dies sind:
-
 \begin{tabular}{|l|lr|} \hline
-Quantum 			& Eigenschaften 	&  		\\  \hline
-Elektron( $e^-$ ) 		& Masse: 			& $m_e$	\\
-					& Ladung: 		& $-e$ 	\\ \hline
-Proton($p^+$) 		& Masse: 			& $m_p$ 	\\
- 					& Ladung: 		& $e$ 	\\ \hline 
-Neutron($N$)			& Masse:			& $m_N$	\\ 
-					& Ladung:		& $0$	\\ \hline
-Photon($ \lambda $) 	& Masse: 			& $0$	\\ 
-					&Ladung:			& $0$	\\ \hline
+Teilchen 				& Eigenschaften 	&  						\\  \hline
+Elektron( $e^-$ ) 		& Masse: 			& $m_e=9,109*10^{-31}kg$	\\
+					& Ladung: 		& $-e=-1,602*10^{-19}C$	\\ \hline
+Proton($p^+$) 		& Masse: 			& $m_p=1,672*10^{-27}kg$ 	\\
+ 					& Ladung: 		& $e=1,602*10^{-19}kg$	\\ \hline 
+Neutron($N$)			& Masse:			& $m_N=1,674*10^{-27}C$	\\ 
+					& Ladung:		& $0$					\\ \hline
+Photon($ \lambda $) 	& Masse: 			& $0$					\\ 
+					&Ladung:			& $0$					\\ \hline
 \end{tabular}
 \subsection{Das Elektron}
+Das Elektron ist das kleinste und leichteste der Elementarteilchen. Es ist negativ mit einer Elementarladun($e$) geladen und besitzt die Masse($m_e$). In den meisten Fällen wird ein elektrischer Strom durch Elektronen übertragen. Elektronen bilden zusammen mit den Protonen und den Neutronen Atome. Wobei die Elektronen die Atomschale bilden.
 
+\subsection{Das Proton}
+Das Proton selbst ist kein Quantum sondern besteht aus drei kleineren, diese sind alerdings nicht aleine beobachtbar. Es hat eine positive Elementarladung($e$) und eine wesentlich größere Masse($m_p$) als das Elektron. Es bildet zusamen mit den Protonen den Atomkern.
+
+\subsection{Das Neutron}
+Das Neutron ist wie das Proton kein Quantum sondern besteht auch aus drei kleineren Quanten. Es hat eine noch größere Masse($m_N$) als das Proton, ist alerdings nicht geladen.
+
+\subsection{Das Photon}
+Das Photon ist ein Wirkumsquantum und besitzt als solches weder Masse noch eine Ladung. Das Photon übermittelt als Wirkumsquantum das elektromagnetische Feld.
 
 \section{Orbitalmodell und erweitertes Orbitalmodell}
 Das Bohrsche Atommodell beschreibt ein 
@@ -55,12 +68,10 @@ Der Photoeffekt oder auch lichtelektrischer Effekt beschreibt die Aufnahme eines
 
 \chapter{Schlussbetrachtung}
 
-
-
 \appendix{Anhang}
-\chapter{Quellen}
-\section{Onlinequellen}
 \bibliographystyle{plain}
+
+%\bibliographyname{Quellen}
 \bibliography{Sources}
 
 \end{document}
