@@ -1,4 +1,6 @@
 \documentclass[11pt,a4paper,oneside]{report}
+\usepackage{geometry}
+\usepackage{fancyhdr}
 \usepackage[ngerman]{babel}
 \usepackage{bpchem}
 \usepackage{fontspec}
@@ -10,15 +12,34 @@
 
 \setmainfont{Arial}
 \titleformat{\chapter}[hang]{\LARGE\bfseries}{\thechapter}{1em}{}
+\titleclass{\chapter}{straight}
+\bibliographystyle{plain}
+\renewcommand{\baselinestretch}{1.5}
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=25mm,
+top=20mm
+}
 
 \begin{document}
+\titlespacing{\chapter}{0em}{1em}{1.5em}[0pt]
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
-%\renewcommand{\bibname}{\chapter{Quellen}}
+%\renewcommand{\bibname}{\section{Quellen}}
 \renewcommand{\bibname}{Quellen}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CEO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\setcounter{page}{2}
 
 % Content
 
 \tableofcontents
+
+\clearpage
 
 \chapter{Einleitung und Vorbetrachtung}
 
@@ -27,10 +48,13 @@ Glas also \BPChem{SiO\_2} ist einer der wenigen Feststoffe die für sichtbares L
 \\Zur Betrachtung dieses Umstandes müssen drei Effekte betrachtet werden. \cite{pape99}
 
 \chapter{Beschreibung der physikalisch-chemischen Modelle}
+Im folgenden sollen die Modelle beschrieben werden die zur Erklärung des in der Einleitung beschriebenen Effekts notwendig sind.
 
 \section{Modelle der Quantenmechanik}
-In der Quantenmechanik wird angennommen, das alle Elementarteilchen sowohl Teilchen- als auch Wellencharakter haben. Auserdem haben auch die bis dahin nur als Feld beschriebenen Effekte Teilchencharakter zum Beispiel das elektromagnetische Feld das durch Photonen übertragen wird.
-Für diese Arbeit ist alerdings nur ein Teil der Quanten relevant dies sind:
+In der Quantenmechanik wird angenommen, das alle Elementarteilchen sowohl Teilchen- als auch Wellencharakter haben. Außerdem haben auch die bis dahin nur als Feld beschriebenen Effekte Teilchencharakter zum Beispiel das elektromagnetische Feld das durch Photonen übertragen wird.
+Für diese Arbeit ist allerdings nur ein Teil der Quanten relevant dies sind:
+\begin{table}[h]
+\centering
 \begin{tabular}{|l|lr|} \hline
 Teilchen 				& Eigenschaften 	&  						\\  \hline
 Elektron( $e^-$ ) 		& Masse: 			& $m_e=9,109*10^{-31}kg$	\\
@@ -42,23 +66,26 @@ Neutron($N$)			& Masse:			& $m_N=1,674*10^{-27}C$	\\
 Photon($ \lambda $) 	& Masse: 			& $0$					\\ 
 					&Ladung:			& $0$					\\ \hline
 \end{tabular}
+\caption{Die zur Betrachtung notwendigen Teilchen.\cite{stroppe08}}
+\end{table}
+
 \subsection{Das Elektron}
-Das Elektron ist das kleinste und leichteste der Elementarteilchen. Es ist negativ mit einer Elementarladun($e$) geladen und besitzt die Masse($m_e$). In den meisten Fällen wird ein elektrischer Strom durch Elektronen übertragen. Elektronen bilden zusammen mit den Protonen und den Neutronen Atome. Wobei die Elektronen die Atomschale bilden.
+Das Elektron ist das kleinste und leichteste der Elementarteilchen. Es ist negativ mit einer Elementarladung($e$) geladen und besitzt die Masse($m_e$). In den meisten Fällen wird ein elektrischer Strom durch Elektronen übertragen. Elektronen bilden zusammen mit den Protonen und den Neutronen Atome. Wobei die Elektronen die Atomschale bilden.
 
 \subsection{Das Proton}
-Das Proton selbst ist kein Quantum sondern besteht aus drei kleineren, diese sind alerdings nicht aleine beobachtbar. Es hat eine positive Elementarladung($e$) und eine wesentlich größere Masse($m_p$) als das Elektron. Es bildet zusamen mit den Protonen den Atomkern.
+Das Proton selbst ist kein Quantum sondern besteht aus drei kleineren, diese sind allerdings nicht alleine beobachtbar. Es hat eine positive Elementarladung($e$) und eine wesentlich größere Masse($m_p$) als das Elektron. Es bildet zusammen mit den Protonen den Atomkern.
 
 \subsection{Das Neutron}
-Das Neutron ist wie das Proton kein Quantum sondern besteht auch aus drei kleineren Quanten. Es hat eine noch größere Masse($m_N$) als das Proton, ist alerdings nicht geladen.
+Das Neutron ist wie das Proton kein Quantum sondern besteht auch aus drei kleineren Quanten. Es hat eine noch größere Masse($m_N$) als das Proton, ist allerdings nicht geladen.
 
 \subsection{Das Photon}
-Das Photon ist ein Wirkumsquantum und besitzt als solches weder Masse noch eine Ladung. Das Photon übermittelt als Wirkumsquantum das elektromagnetische Feld.
+Das Photon ist ein Wirkungsquantum und besitzt als solches weder Masse noch eine Ladung. Das Photon übermittelt als Wirkungsquantum das elektromagnetische Feld.
 
 \section{Orbitalmodell und erweitertes Orbitalmodell}
-Das Bohrsche Atommodell beschreibt ein 
+Das Bohrsche Atommodell beschreibt ein Atom ähnlich unserem Sonnensystem. Dabei steht der Atomkern im Zentrum und wird von den Elektronen umkreist. Im Kern befinden sich die Protonen und die Neutronen. Zur Kategorisierung von Atomen wird die Anzahl der Protonen im Kern verwendet diese entspricht bei einem neutralen Atom auch der Anzahl der Elektronen.\cite{hefterCh}
 
 \section{Photon-Elektron-Reaktion(Photoeffekt)}
-Der Photoeffekt oder auch lichtelektrischer Effekt beschreibt die Aufnahme eines Photons durch ein Elektron wobei dieses die Energie des Photons aufnimt.\cite{stroppe08}
+Der Photoeffekt oder auch licht elektrischer Effekt beschreibt die Aufnahme eines Photons durch ein Elektron wobei dieses die Energie des Photons aufnimmt.\cite{stroppe08}
 
 \section{Compton-Effekt}
 
@@ -68,10 +95,14 @@ Der Photoeffekt oder auch lichtelektrischer Effekt beschreibt die Aufnahme eines
 
 \chapter{Schlussbetrachtung}
 
-\appendix{Anhang}
-\bibliographystyle{plain}
+\clearpage
 
-%\bibliographyname{Quellen}
+\pagestyle{empty}
+
+\appendix{\chapter*{Anhang}}
+
+\listoftables
+
 \bibliography{Sources}
 
 \end{document}
