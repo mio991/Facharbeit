@@ -27,6 +27,7 @@ top=20mm
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 %\renewcommand{\bibname}{\section{Quellen}}
 \renewcommand{\bibname}{Quellen}
+\setlength{\parindent}{0em}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -44,8 +45,8 @@ top=20mm
 \chapter{Einleitung und Vorbetrachtung}
 
 Glas also \BPChem{SiO\_2} ist einer der wenigen Feststoffe die für sichtbares Licht durchlässig sind. Diese Facharbeit möchte rechnerisch aufzeigen, warum Glas das sichtbare Licht durchlässt.
-\\Stoffe sind undurchlässig für Licht und andere elektromagnetische Wellen, wenn sie Elektronen haben, die mit diesen reagieren könnten.
-\\Zur Betrachtung dieses Umstandes müssen drei Effekte betrachtet werden. \cite{pape99}
+Stoffe sind undurchlässig für Licht und andere elektromagnetische Wellen, wenn sie Elektronen haben, die mit diesen reagieren könnten.
+Zur Betrachtung dieses Umstandes müssen drei Effekte betrachtet werden. \cite{pape99}
 
 \chapter{Beschreibung der physikalisch-chemischen Modelle}
 Im folgenden sollen die Modelle beschrieben werden die zur Erklärung des in der Einleitung beschriebenen Effekts notwendig sind.
@@ -66,11 +67,13 @@ Neutron($N$)			& Masse:			& $m_N=1,674*10^{-27}C$	\\
 Photon($ \lambda $) 	& Masse: 			& $0$					\\ 
 					&Ladung:			& $0$					\\ \hline
 \end{tabular}
-\caption{Die zur Betrachtung notwendigen Teilchen.\cite{stroppe08}}
+\caption{Die zur Betrachtung notwendigen Teilchen.\cite[S. 433]{stroppe08}}
 \end{table}
 
 \subsection{Das Elektron}
 Das Elektron ist das kleinste und leichteste der Elementarteilchen. Es ist negativ mit einer Elementarladung($e$) geladen und besitzt die Masse($m_e$). In den meisten Fällen wird ein elektrischer Strom durch Elektronen übertragen. Elektronen bilden zusammen mit den Protonen und den Neutronen Atome. Wobei die Elektronen die Atomschale bilden.
+\\
+
 
 \subsection{Das Proton}
 Das Proton selbst ist kein Quantum sondern besteht aus drei kleineren, diese sind allerdings nicht alleine beobachtbar. Es hat eine positive Elementarladung($e$) und eine wesentlich größere Masse($m_p$) als das Elektron. Es bildet zusammen mit den Protonen den Atomkern.
@@ -83,9 +86,50 @@ Das Photon ist ein Wirkungsquantum und besitzt als solches weder Masse noch eine
 
 \section{Orbitalmodell und erweitertes Orbitalmodell}
 Das Bohrsche Atommodell beschreibt ein Atom ähnlich unserem Sonnensystem. Dabei steht der Atomkern im Zentrum und wird von den Elektronen umkreist. Im Kern befinden sich die Protonen und die Neutronen. Zur Kategorisierung von Atomen wird die Anzahl der Protonen im Kern verwendet diese entspricht bei einem neutralen Atom auch der Anzahl der Elektronen.\cite{hefterCh}
+\\
+\subsection{Orbitalmodell}
+Im Orbitalmodell gibt es innerhalb der Hauptenergieniveaus Unterniveaus die sich auch energetisch von einander unterscheiden. Die Unterniveaus wiederum bestehen aus energetisch gleichen aber räumlich unterschiedlichen Orbitalen. Diese wiederum können je zwei Elektronen enthalten, mit den Spinquantenzahlen($s$) $+\frac{1}{2}$ und $-\frac{1}{2}$.\cite{hefterCh}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|} \hline
+Hauptenergieniveau 	& Unterenergieniveau 	& Anzahl der Orbitale	&Position im Energieniveauschema	\\ \hline
+1					&s					&1					&1								\\ \hline
+2					&s					&1					&2								\\ 
+					&p					&3					&3								\\ \hline
+3					&s					&1					&4								\\
+					&p					&3					&5								\\
+					&d					&5					&7								\\ \hline
+4					&s 					&1					&6								\\
+					&p 					&3					&8								\\
+					&d 					&5					&10								\\
+					&f 					&7					&13								\\ \hline
+\end{tabular}
+\caption{Aufgliederung der ersten vier Hauptenergieniveaus \cite[Umschlag]{tw}}
+\end{table}
+
+\subsection{Erweitertes Orbitalmodell}
+Unter bestimmten Umständen kommt es dazu, das eine Atom, das eigentlich eine geringe Bindigkeit hat, eine höhere Bindigkeit hat, da diese energetisch günstiger ist. Zum Beispiel Methan(\BPChem{CH\_4}) wo das eigentlich zweibindige Kohlenstoff vierbindig ist. Dies läst sich am besten dadurch erklären das, der Kohlenstoff seine 2s und 2p Orbital hybridisiert.
+\\
+Bei der Hybridisierung werden Orbitale die energetisch und räumlich ungleichartig sind zu energetisch und räumlich gleichartigen Hybridorbitalen. Dazu wird zuerst ein Elektron aus einem vollen Orbital in ein leeres höher energetisches Orbital verschoben. Dann werden diese energetisch und räumlich angeglichen. Dabei entstehen Hybridorbitale die insgesamt energetisch und räumlich den Ausgangsorbitalen entsprechen.\cite[S. 100ff]{riedel08}
 
 \section{Photon-Elektron-Reaktion(Photoeffekt)}
-Der Photoeffekt oder auch licht elektrischer Effekt beschreibt die Aufnahme eines Photons durch ein Elektron wobei dieses die Energie des Photons aufnimmt.\cite{stroppe08}
+Der Photoeffekt oder auch lichtelektrischer Effekt beschreibt die Aufnahme eines Photons durch ein Elektron wobei dieses die Energie des Photons aufnimmt.\cite{stroppe08} Dabei wird das Elektron beschleunigt da der Energieerhaltungssatz($E_{in}=E_{out}$) erfüllt werden muss. 
+Die Energie des Photons ergibt sich aus: 
+
+\begin{figure}[h]
+\centering
+$E=hf \text{\hspace{1em} mit \hspace{1em}} h=6,626069*10^{-34}Js$
+\caption{Die Energie eines Photons\cite[S. 421]{stroppe08}}
+\end{figure}
+
+Das Energieniveau eines Orbitals ergibt sich aus:
+\begin{figure}[h]
+\centering
+$E_n=-\frac{e^4m_e}{8\epsilon_0^2h^2}\frac{Z^2}{n^2}=-13,6\frac{Z^2}{n^2}eV$
+\caption{Die Berechnung eines Energieniveaus\cite[S.439]{stroppe08}}
+\end{figure}
+Dabei ist $Z$ die Kernladungszahl und $n$ die Hauptquantenzahl. Dabei gibt es innerhalb dieser Hauptenerginiveaus noch energetisch und räumlich geringfügig unterschiedliche Unterenergieniveaus. Die Energiedifferenz zwischen dem Hauptenergieniveau und dem Unterenergieniveau so gering das sie im Rahmen dieser Arbeit vernachlässigt werden kann.
 
 \section{Compton-Effekt}
 
@@ -102,6 +146,8 @@ Der Photoeffekt oder auch licht elektrischer Effekt beschreibt die Aufnahme eine
 \appendix{\chapter*{Anhang}}
 
 \listoftables
+
+\listoffigures
 
 \bibliography{Sources}
 
