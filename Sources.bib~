@@ -3,15 +3,15 @@
 
 
 @Unpublished{hefterCh,
-  Title                    = {{Mitschriften} im {Fach} {Chemie}},
-  Author                   = {Arndt, Jonas},
+  Title                    = {Mitschriften im Fach Chemie},
+  Author                   = {Jonas Arndt},
 
   Owner                    = {mio991},
   Timestamp                = {2015.12.14}
 }
 
 @Book{tw,
-  Title                    = {{Formeln} und {Tabellen}},
+  Title                    = {Formeln und Tabellen},
   Author                   = {Autorenkolektiv},
   Publisher                = {DUDEN PATEC Schulbuchverlag, Berlin, Mannheim},
   Year                     = {2014},
@@ -21,7 +21,7 @@
 }
 
 @Book{riedel08,
-  Title                    = {{Allgemeine} und {Anorganische} {Chemie}},
+  Title                    = {Allgemeine und Anorganische Chemie},
   Author                   = {Prof. em. Dr. Erwin Riedel},
   Publisher                = {Walter de Gruyter, Berlin, NewYork},
   Year                     = {2008},
@@ -31,7 +31,7 @@
 }
 
 @Book{stroppe08,
-  Title                    = {{Physik} für {Studierende} der {Natur}- und {Ingenieurwissenschaften}},
+  Title                    = {Physik für Studierende der Natur- und Ingenieurwissenschaften},
   Author                   = {Prof. Dr. sc. nat. Dr.-Ing. Heribert Stroppe
 Dr. rer. nat. Heinz Langer
 Dr. rer. nat. habil. Peter Streitenberger
@@ -44,7 +44,7 @@ Dr. rer. nat. Eckard Specht},
 }
 
 @Book{griff12,
-  Title                    = {{Quantenmechanik} {Lehr-} und {Übungsbuch}},
+  Title                    = {Quantenmechanik Lehr- und Übungsbuch},
   Author                   = {David J. Griffths},
   Publisher                = {Pearson München},
   Year                     = {2012},
@@ -55,7 +55,7 @@ Dr. rer. nat. Eckard Specht},
 }
 
 @Misc{pape99,
-  Title                    = {{Elektromagnetische} {Wechselwirkung} von {Photonen} und {Elektronen} mit {Materie}},
+  Title                    = {elektromagnetische Wechselwirkung von Photonen und Elektronen mit Materie},
 
   Author                   = {Michael Ralph Pape},
   HowPublished             = {Website},
